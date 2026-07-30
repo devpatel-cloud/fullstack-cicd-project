@@ -1,13 +1,11 @@
-version: "3.8"
-
 services:
   frontend:
-    image: YOUR_DOCKERHUB_USERNAME/frontend:latest
+    image: devpatelcloud/frontend:latest
     container_name: frontend
     restart: always
 
   backend:
-    image: YOUR_DOCKERHUB_USERNAME/backend:latest
+    image: devpatelcloud/backend:latest
     container_name: backend
     restart: always
     depends_on:
